@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kap - El lugar donde el mundo gaming e informática se encuentra.">
+  <title>Kap - Comunidad Informática</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    /* Estilo general */
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(to right, #131313, #4c4c9f);
+      color: white;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1s ease-in;
+    }
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { transform: translateY(50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes gridSlide {
+      0% { transform: translateY(30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Header */
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+      animation: slideDown 0.5s ease-out;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #ff5f5f;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 25px;
+      margin: 0 15px;
+      font-size: 1.4rem;
+      background: #ff007f;
+      border-radius: 30px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    nav a:hover {
+      background-color: #ff5f5f;
+      transform: scale(1.1);
+    }
+
+    /* Contenido principal */
+    .main-content {
+      text-align: center;
+      padding: 40px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    /* Sección de tutoriales */
+    .section-header img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .video-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+      animation: gridSlide 1.5s ease-in-out;
+    }
+
+    .video-card {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .video-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    }
+
+    .video-card iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 1.2rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Kap - Comunidad Informática</h1>
+    <nav>
+      <a href="#tutoriales">Tutoriales</a>
+      <a href="#videos">Videos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <div class="main-content">
+    <h2>Bienvenido a Kap - Tu espacio para aprender y compartir en el mundo Informático</h2>
+    <p>Encuentra tutoriales, videos, guías, y todo lo relacionado al mundo gaming y la informática.</p>
+
+    <!-- Sección de Tutoriales -->
+    <section id="tutoriales">
+      <div class="section-header">
+        <img src="https://example.com/icono_tutorial.png" alt="Icono Tutoriales">
+        <h3>Tutoriales Recientes</h3>
+      </div>
+      <div class="video-section">
+        <!-- Tutoriales -->
+        <div class="video-card">
+          <h4>Cómo Configurar Tu PC para Juegos</h4>
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h4>Instalar Juegos en PC - Guía Paso a Paso</h4>
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h4>Optimizar el Rendimiento de tu PC</h4>
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h4>Cómo Armar una PC desde Cero</h4>
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Videos -->
+    <section id="videos">
+      <div class="section-header">
+      
+        <h3>Videos Recientes</h3>
+      </div>
+      <div class="video-section">
+        <!-- Videos -->
+        <div class="video-card">
+          <h4>Instalación de un Sistema Operativo</h4>
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_5" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h4>Primeros Pasos en el Mundo del Streaming</h4>
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_6" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h4>Cómo Crear un Servidor en Minecraft</h4>
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_7" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h4>Errores comunes en una PC</h4>
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_8" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+      <div class="section-header">
+        <h3>Contacto</h3>
+      </div>
+      <p>Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos a través del correo electrónico:</p>
+      <p><a href="mailto:azuagaivan0@gmail.com" style="color: #ff007f; text-decoration: none; font-size: 1.2rem;">azuagaivan0@gmail.com</a></p>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kap - Comunidad Informática | Página diseñada y realizada por: Iván Azuaga Arce</p>
+  </footer>
+
+</body>
+</html>
